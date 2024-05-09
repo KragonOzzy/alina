@@ -1,0 +1,32 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif; /* Выбранный шрифт */
+    text-align: center; /* Выравнивание по центру */
+}
+
+h1 {
+    font-size: 2em; /* Увеличенный размер шрифта */
+    font-weight: bold; /* Жирное начертание */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+}
+
+p {
+    font-size: 1.2em; /* Немного увеличенный размер шрифта */
+    color: #333; /* Цвет текста */
+    letter-spacing: 2px; /* Расстояние между буквами */
+    line-height: 1.5; /* Межстрочный интервал */
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('путь_к_шрифту/шрифт.ttf') format('truetype');
+}
+
+.gradient-text {
+    font-family: 'MyCustomFont';
+    font-size: 36px;
+    background: linear-gradient(to right, #060606, #0c0c0c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    -webkit-text-stroke: 2px white;
+}
